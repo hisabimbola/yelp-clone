@@ -96,7 +96,8 @@ config.resolve.alias = {
 if (isTest) {
   config.externals = {
     'react/lib/ReactContext': true,
-    'react/lib/ExecutionEnvironment': true
+    'react/lib/ExecutionEnvironment': true,
+    'react/addons': true
   };
 
   config.plugins = config.plugins.filter(p => {
